@@ -1,0 +1,234 @@
+/* 
+
+@name: MylesWasBored Discord Custom.
+@Version 1.0
+@description: Got bored, testing css knowledge.
+@author Myles M.
+
+@Contacts
+
+Twitter: @myleswasbored
+Discord: Vanity#6759
+
+*/
+
+/* Imports for base designs */
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+@import url("https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css");
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Quicksand&display=swap');
+
+@keyframes rgb {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+:root {
+  /* Background image variables */
+  --background-image: url('https://cdn.midjourney.com/3b3b6c14-a67b-4321-8b7b-b81ce28c6192/grid_0.png'); /* Main background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --background-image-blur: 5px; /* Blur intensity of --background-image | Must end in px | DEFAULT: 5px */
+  --background-image-size: cover; /* Size of the background image | DEFAUT: cover | OPTIONS: cover, contain */
+  --background-image-position: center; /* Position of background image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
+
+  /* Popout & Modal variables */
+  --popout-modal-image: var(--background-image); /* Background image for popouts and modals | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --popout-modal-blur: 5px; /* Blur intensity of --popout-modal-image | Must end in px | DEFAULT: 5px */
+  --popout-modal-size: cover; /* Size of the popout/modal image | DEFAUT: cover | OPTIONS: cover, contain */
+  --popout-modal-position: center; /* Position of popout/modal image | DEAFULT: center | OPTIONS: top, right, bottom, left, center */
+
+  /* Home image variables */
+  --home-button-image: url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg'); /* Home button image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --home-button-size: cover; /* Size of the home button image | DEFAUT: cover */
+  --home-button-position: center; /* Position of home button image | DEAFULT: center */
+
+  /* Brightness variables */
+  --serverlist-brightness: 0.8; /* Brightness for serverlist | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
+  --left-brightness: 0.8; /* Channels and DM list brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
+  --middle-brightness: 0.6; /* Chat brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.6 */
+  --right-brightness: 0; /* Members and Now Playing brightness | 0 - 1 (decimals allowed) | DEFAULT: 0 */
+  --popout-modal-brightness: 1; /* Brightness for popouts and modals | 0 - 1 (decimals allowed) | DEFAULT: 0.75 */
+
+  /* Gradient variables */
+  --gradient-primary: 226, 237, 171, 0.8; /* DEFAULT: 103,58,183 */
+  --gradient-secondary: 171, 237, 215, 1; /* DEFAULT: 63,81,181 */
+  --gradient-direction: 320deg; /* DEFAULT: 320deg */
+
+
+  /* Tint variables */
+  --tint-colour: 255,51,159; /* Colour of tint | DEAFULT: 255,51,159 */
+  --tint-brightness: 0; /* Brightness of --tint-colour | 0 - 1 (decimals allowed) | DEFAULT: 0 */
+
+  /* Other variables */
+  --window-padding: 40px; /* Spacing around the Discord window | DEFAULT: 20px */
+  --window-roundness: 20px; /* Roundness of Discord | DEFAULT: 10px */
+  --scrollbar-colour: rgb(171, 237, 215, 0.05); /* DEFAULT: rgba(255,255,255,0.05) */
+  --link-colour: #00b0f4; /* DEFAULT: #00b0f4 */
+  --webkit-transition: all 10s ease-in-out;
+
+  /* Font */
+  --font: 'Quicksand';
+
+  /* Do not touch */
+  --update-notice-1: none;
+
+  /* Radial glow */
+
+--rs-small-spacing: 0px;
+--rs-large-spacing: 0px;
+--rs-medium-spacing: 0px;
+--rs-small-width: 2.5px;
+--rs-medium-with: 3.5px;
+--rs-large-width: 4.5px;
+
+  /* Colors */
+
+--interactive-hover: #abedd7; /* Text color for channels */
+--interactive-muted: #ABEDD7; /* Reply widget? */
+--voice-channel-active: blue;
+--text-normal: #a4a5a6; /* Channel text color */
+--webkit-transition: ;
+--background-message-hover: grey;
+}
+
+
+/* Upper-tab */
+
+.container-ZMc96U.themed-Hp1KC_{
+    background: transparent;
+}
+
+/* Text for Channel Title */
+
+.container-1-ERn5 > div,
+.lineClamp1-1voJi7 {
+background: linear-gradient(-45deg, #505257 15%, #fae991 75%);
+background-size: 300%, 300%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-backdrop-filter: blur(5px);
+animation: rgb 5s ease-in-out infinite;
+}
+
+/* Text-shadow to see with gradient */
+
+.container-2o3qEW > div,
+.activityText-1rR-8O {
+color: white;
+text-shadow: 0.5px 0.5px 0.25px black;
+}
+
+/* Dropshadow for negate text-shadow */
+
+.container-2o3qEW > svg,
+.icon-Lupfh- {
+    filter: drop-shadow(1px 1px 20px rgba(0, 0, 0, 0.281));
+}
+
+/* Changing header bar */
+
+.wordmark-2u86JB path {
+    display: none !important; /* Getting rid of 'Discord watermark' */
+}
+
+.titleBar-1it3bQ {
+    color: transparent !important;
+}
+
+/* Watermark */
+.wordmark-2u86JB:before {
+    content: "Myles Was Bored";
+    color: white;
+    font-size: 12px;
+    font-family: "Inter";
+    font-weight: 700;
+    position: fixed;
+    padding: 15px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 5px 0px 0px 30px;
+}
+
+.winButtonClose-3Q8ZH5 {
+  top: -3.5px;
+  right: 20px;
+  padding: 5px;
+  margin: 10px 0px 0px 30px;
+  border-radius: 0px 5px 5px 0px;
+  transition: 0.5s ease-in;
+  color: #fff;
+}
+.winButtonClose-3Q8ZH5:hover {
+  top: -3.5px;
+  right: 20px;
+  padding: 5px;
+  margin: 10px 0px 0px 30px;
+  border-radius: 0px 5px 5px 0px;
+  color: #fff;
+  background: transparent;
+  transform: rotate(90deg) !important;
+  transition: 1s ease-out;
+  backdrop-filter: none;
+}
+/* Maximize */
+.winButtonMinMax-3RsPUg:nth-child(3) {
+  top: -3.5px;
+  right: 10px;
+  padding: 5px;
+  margin: 10px 0px 0px 30px;
+  border-radius: 0px;
+  color: #fff;
+  background: var(--window-colour);
+  backdrop-filter: blur(var(--window-blur));
+  transition: 0.5s ease-in;
+}
+
+.winButtonMinMax-3RsPUg:nth-child(3):hover {
+  top: -3.5px;
+  right: 10px;
+  padding: 5px;
+  margin: 10px 0px 0px 30px;
+  border-radius: 0px;
+  color: #fff;
+  background: transparent;
+  transform: rotate(90deg) !important;
+  transition: 1s ease-out;
+  backdrop-filter: none;
+}
+/* Minimize */
+.winButtonMinMax-3RsPUg:nth-child(2n) {
+  top: -3.5px;
+  right: 0px;
+  padding: 5px;
+  margin: 10px 0px 0px 30px;
+  border-radius: 5px 0px 0px 5px;
+  color: #fff;
+  transition: 0.5s ease-in;
+}
+.winButtonMinMax-3RsPUg:nth-child(2n):hover {
+  top: -3.5px;
+  right: 0px;
+  padding: 5px;
+  margin: 10px 0px 0px 30px;
+  border-radius: 5px 0px 0px 5px;
+  color: #fff;
+  transform: rotate(90deg) !important;
+  transition: 1s ease-out;
+  background: transparent;
+}
+
+.titleBar-1it3bQ {
+    background-color: rgb(255,255,255 0.5) !important;
+    height: 5px;
+    cursor: move;
+}
