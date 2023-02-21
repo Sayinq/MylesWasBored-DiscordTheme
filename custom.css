@@ -60,8 +60,8 @@ Discord: Vanity#6759
   --popout-modal-brightness: 1; /* Brightness for popouts and modals | 0 - 1 (decimals allowed) | DEFAULT: 0.75 */
 
   /* Gradient variables */
-  --gradient-primary: 226, 237, 171, 0.8; /* DEFAULT: 103,58,183 */
-  --gradient-secondary: 171, 237, 215, 1; /* DEFAULT: 63,81,181 */
+  --gradient-primary: 46, 112, 140; /* DEFAULT: 103,58,183 */
+  --gradient-secondary: 86, 198, 148; /* DEFAULT: 63,81,181 */
   --gradient-direction: 320deg; /* DEFAULT: 320deg */
 
 
@@ -96,7 +96,7 @@ Discord: Vanity#6759
 --interactive-hover: #abedd7; /* Text color for channels */
 --interactive-muted: #ABEDD7; /* Reply widget? */
 --voice-channel-active: blue;
---text-normal: #a4a5a6; /* Channel text color */
+--text-normal: white; /* Channel text color */
 --webkit-transition: ;
 --background-message-hover: grey;
 }
